@@ -7,9 +7,8 @@ listado y detalle.
 
 ## URL de la aplicación publicada
 
-https://pulso-abierto.vercel.app
+https://pulso-abierto-nu.vercel.app/
 
-> Reemplazá esta URL por la que te asignó Vercel al desplegar tu proyecto.
 
 ## Tecnologías principales
 

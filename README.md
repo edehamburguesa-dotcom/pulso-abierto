@@ -1,35 +1,32 @@
-# React + TypeScript + Vite
+# Pulso Abierto
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web para consultar cotizaciones de Bitcoin, Ethereum y Solana en
+dólares estadounidenses (USD), con favoritos persistentes y navegación entre
+listado y detalle.
 
-Currently, two official plugins are available:
+## URL de la aplicación publicada
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://pulso-abierto.vercel.app
 
-## React Compiler
+> Reemplazá esta URL por la que te asignó Vercel al desplegar tu proyecto.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tecnologías principales
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- **React 18** — interfaz declarativa basada en componentes
+- **TypeScript 5** — tipado estático
+- **Vite 5** — servidor de desarrollo y build productivo
+- **React Router 6** — navegación entre listado, detalle y 404
+- **Zustand 4** — estado global de favoritos con persistencia en `localStorage`
+- **Zod** — validación del formulario de consulta
+- **Vitest 2 + Testing Library** — pruebas automatizadas
+- **CoinGecko API** — fuente de las cotizaciones
 
-## Expanding the Oxlint configuration
+## Requisitos
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Node.js 26.x (o superior)
+- npm 10.x (o superior)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Instalación
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+```bash
+npm install
